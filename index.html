@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Wang Guorun">
+  <title>Wang Guorun</title>
+  <style>
+    :root {
+      --text: #1c1917;
+      --muted: #57534e;
+      --link: #1e3a5f;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background: #faf9f7;
+      line-height: 1.65;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+    }
+    main {
+      max-width: 46rem;
+      width: 100%;
+      display: flex;
+      gap: 2.25rem;
+      align-items: center;
+    }
+    .portrait {
+      width: 9.5rem;
+      height: 11.75rem;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 6px;
+      flex-shrink: 0;
+      background: #fff;
+    }
+    .info { min-width: 0; }
+    h1 {
+      font-size: 2.15rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      line-height: 1.2;
+      margin-bottom: 0.7rem;
+    }
+    .affiliation {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 1.1rem;
+    }
+    .bio {
+      font-size: 1.05rem;
+      margin-bottom: 1.25rem;
+    }
+    a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(30, 58, 95, 0.28);
+    }
+    a:hover { border-bottom-color: var(--link); }
+    .email { font-size: 1.05rem; }
+    .links {
+      margin-top: 1.25rem;
+      font-size: 1rem;
+    }
+    @media (max-width: 560px) {
+      main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="portrait" src="photo.jpg" alt="Wang Guorun" width="152" height="188">
+    <div class="info">
+      <h1>Wang Guorun</h1>
+      <p class="affiliation">
+        B.Eng. in Artificial Intelligence<br>
+        The Hong Kong University of Science and Technology (Guangzhou)
+      </p>
+      <p class="bio">
+        My research interests are embodied AI and robotic learning.
+      </p>
+      <p class="email">
+        Email: <a href="mailto:gwang549@connect.hkust-gz.edu.cn">gwang549@connect.hkust-gz.edu.cn</a>
+      </p>
+      <p class="links">
+        <a href="https://github.com/GreeWang">GitHub</a>
+      </p>
+    </div>
+  </main>
+</body>
+</html>
